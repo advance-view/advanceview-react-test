@@ -17,7 +17,7 @@ export default function App() {
   const filteredItems = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
     if (!q) return items;
-    return items.filter((p) => p.name.toLowerCase().includes(q));
+    return items.filter((p) => p.name.toLowerCase().includes(q));asdas
   }, [items, searchQuery]);
 
   const addProduct = ({ name, category }) => {
